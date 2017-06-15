@@ -32,5 +32,5 @@ clean:
 docs:
 	doxygen && cd $(DOCS_DIR)/latex && make
 
-random:
+input:
 	exec io/random.sh
