@@ -1,4 +1,4 @@
-Trabalho Prático 2 - AEDS II
+# Trabalho Prático 2 - AEDS II
 
 O programa consiste em uma ordenação de números inteiros positivos lidos do arquivo `io/input.txt`.
 
