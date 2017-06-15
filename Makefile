@@ -34,3 +34,6 @@ docs:
 
 input:
 	exec io/random.sh
+
+valgrind:
+	valgrind --track-origins=yes --leak-check=full --show-leak-kinds=all ./$(BIN_DIR)/main
