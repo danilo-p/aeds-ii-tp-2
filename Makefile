@@ -24,7 +24,7 @@ setup:
 	mkdir -p $(BIN_DIR) $(OBJ_DIR)
 
 run:
-	exec $(BIN_DIR)/main
+	exec $(BIN_DIR)/main io/input.txt io/output.txt
 
 clean:
 	rm -f $(OBJ_DIR)/* $(BIN_DIR)/*
