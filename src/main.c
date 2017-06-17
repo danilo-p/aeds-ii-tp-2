@@ -12,20 +12,17 @@ int main(int argc, char *argv[]) {
     int length, i, *array;
 
     // Few arguments error
-    if(argc < 3)
-        return -1;
+    if(argc < 3) return -1;
 
     // Opening files
     input = fopen(argv[1], "r");
     output = fopen(argv[2], "w");
 
     // Failed to open input file error
-    if(input == NULL)
-        return -2;
+    if(input == NULL) return -2;
 
     // Failed to open output file error
-    if(output == NULL)
-        return -3;
+    if(output == NULL) return -3;
 
     // Reading the input array length
     fscanf(input, "%d\n", &length);
@@ -47,12 +44,10 @@ int main(int argc, char *argv[]) {
     free(array);
 
     // Failed to close input file error
-    if(fclose(input) != 0)
-        return -4;
+    if(fclose(input) != 0) return -4;
 
     // Failed to close output file error
-    if(fclose(output) != 0)
-        return -5;
+    if(fclose(output) != 0) return -5;
 
     return 0;
 }
