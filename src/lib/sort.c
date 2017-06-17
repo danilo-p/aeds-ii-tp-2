@@ -48,7 +48,12 @@ void bubbleSort(int* array, int length) {
 void quickSort (int *array, int length) {
     if(length > 1) {
         int i, j, tmp,
-            pivot = array[length / 2];
+            first = array[0],
+            last = array[length-1],
+            middle = array[length / 2],
+            pivot = (first > last) ?
+                    (middle > first ? first : middle):
+                    (middle > last ? last : middle);
 
         for (i = 0, j = length - 1;; i++, j--) {
             while (array[i] < pivot) i++;
