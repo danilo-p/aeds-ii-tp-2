@@ -10,4 +10,4 @@ Para compilar o programa, execute o comando `make`. Ele executará as tasks `set
 
 ## Execução
 
-Para executar o programa, execute o comando `make run`. A execução do programa não imprime nenhum texto na linha de comando. Os resultados do programa, como mencionado, estarão no arquivo `output.txt`.
+Para executar o programa, execute o comando `make run`. A execução do programa não imprime nenhum texto na linha de comando. Os resultados do programa, como mencionado, estarão no arquivo `io/output.txt`.
