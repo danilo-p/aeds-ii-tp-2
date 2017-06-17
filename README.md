@@ -6,7 +6,7 @@ A especificação dada está no arquivo `Especificação.pdf`. A documentação 
 
 ## Compilação
 
-Para compilar o programa, execute o comando `make`. Ele executará as tasks `setup` e `main`. A task setup criará duas pastas na raíz do projeto: `bin` e `obj`. A pasta `bin` conterá o arquivo executável do programa, e a pasta `obj` conterá os arquivos objeto necessários para a compilação do programa.
+Para compilar o programa, execute o comando `make`. Ele executará as tasks `setup` e `main`. A task `setup` criará duas pastas na raíz do projeto, `bin` e `obj`, e a task `main` compilará o código. A pasta `bin` conterá o arquivo executável do programa, e a pasta `obj` conterá os arquivos objeto necessários para a compilação do programa.
 
 ## Execução
 
