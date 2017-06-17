@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "lib/array.h"
 #include "lib/sort.h"
 
 /**
