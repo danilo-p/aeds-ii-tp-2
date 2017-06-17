@@ -1,17 +1,5 @@
 #include "sort.h"
-#include "array.h"
 
-/**
- * @brief      Selection Sort
- *
- *             Sort method that consists of piking the lowest value of the array
- *             and put it in the first position.
- *
- *             Complexity: O(length²).
- *
- * @param      array   The array
- * @param[in]  length  The length of the array
- */
 void selectionSort(int* array, int length) {
     int i, j, min_position, aux;
 
@@ -28,15 +16,6 @@ void selectionSort(int* array, int length) {
     }
 }
 
-/**
- * @brief      Insertion Sort
- *
- *             Sort method that consists on inserting the element on the right  
- *             position, by comparing it with the its predecessor.
- *
- * @param      array   The array
- * @param[in]  length  The length
- */
 void insertionSort(int* array, int length) {
     int i;
 
@@ -52,18 +31,6 @@ void insertionSort(int* array, int length) {
     }
 }
 
-/**
- * @brief      Bubble Sort
- *
- *             Sort method that consists on comparing the current element with
- *             its successor. If it is greater than its successor, so they
- *             change the places and it is compared with the next element.
- *             
- *             Complexity: O(length²)
- *
- * @param      array   The array
- * @param[in]  length  The length
- */
 void bubbleSort(int* array, int length) {
     int i, j, aux;
 
@@ -75,5 +42,25 @@ void bubbleSort(int* array, int length) {
                 array[j+1] = aux;
             }
         }
+    }
+}
+
+void quickSort (int *array, int length) {
+    if(length > 1) {
+        int i, j, tmp,
+            pivot = array[length / 2];
+
+        for (i = 0, j = length - 1;; i++, j--) {
+            while (array[i] < pivot) i++;
+            while (array[j] > pivot) j--;
+
+            if (i >= j) break;
+
+            tmp = array[i];
+            array[i] = array[j];
+            array[j] = tmp;
+        }
+        quickSort(array, i);
+        quickSort(array + i, length - i);
     }
 }

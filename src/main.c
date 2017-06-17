@@ -38,7 +38,7 @@ int main(int argc, char *argv[]) {
         fscanf(input, "%d", &array[i]);
 
     // Sorting the array
-    selectionSort(array, length);
+    quickSort(array, length);
 
     // Writing the sorted array on the output file
     for(i = 0; i < length; i++)
