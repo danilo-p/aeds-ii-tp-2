@@ -5,6 +5,14 @@
 /**
  * @brief      Main function
  *
+ *             Complexity (average case): O(length*log(length)), as length being
+ *             the size of the input array read from the input file.
+ *
+ * @param[in]  argc  The argc. It must be always 3, because the input and output
+ *                   files must be specified on the input.
+ * @param      argv  The argv[1] is the input file. The argv[2] is the output
+ *                   file.
+ *
  * @return     0
  */
 int main(int argc, char *argv[]) {
