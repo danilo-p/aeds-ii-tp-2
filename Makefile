@@ -37,7 +37,7 @@ docs:
 	doxygen && cd $(DOCS_DIR)/latex && make
 
 input:
-	exec $(IO_DIR)/random.sh $(IO_DIR)/input.txt
+	exec $(IO_DIR)/random.sh $(IO_DIR)/input.txt $(AMOUNT)
 
 valgrind:
 	valgrind --track-origins=yes --leak-check=full --show-leak-kinds=all ./$(BIN_DIR)/main
